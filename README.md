@@ -1,8 +1,13 @@
-# myapp
+# flutter-study
 
-A new Flutter project.
+FlutterつかってUIの実装チェックとかAPIの調べごととかするやつ
 
-## Getting Started
+# コミットログ
 
-For help getting started with Flutter, view our online
-[documentation](https://flutter.io/).
+ - コミットはなんかいい感じにまとまったらやってる
+ - 画像とか静的データは content 内に残しとく
+ - 一段落したらコミットする
+
+## zuiho
+
+https://flutter.io/tutorials/layout/ をもとに作ったやつ。瑞鳳の紹介とかそれっぽいアイコンをおいただけ
