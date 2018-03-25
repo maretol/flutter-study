@@ -11,3 +11,10 @@ FlutterつかってUIの実装チェックとかAPIの調べごととかする�
 ## zuiho
 
 https://flutter.io/tutorials/layout/ をもとに作ったやつ。瑞鳳の紹介とかそれっぽいアイコンをおいただけ
+
+## List
+
+ListViewを使用してあれこれするもの。FlowingButtonでリストを追加した
+
+ - Listに追加するときになんでか知らないけど body/listview/children のリストは.toList()かまさないとうまく追加できないっぽい
+ - exampleのleave_behind_demoあたり参考にするといいと思うよ
