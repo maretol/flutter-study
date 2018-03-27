@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_webview_plugin/flutter_webview_plugin.dart';
 import 'dart:async';
 
 class MyApp extends StatefulWidget{
@@ -84,7 +85,7 @@ class _MyAppState extends State<MyApp> with SingleTickerProviderStateMixin{
         listname + text,
         style: new TextStyle(fontSize: 24.0),
       ),
-      onTap: (){_onTap();},
+      onTap: (){_onExampleView();},
     );
   }
 
@@ -118,5 +119,19 @@ class _MyAppState extends State<MyApp> with SingleTickerProviderStateMixin{
         )
       );
     });
+  }
+
+  void _onExampleView(){
+    const url = 'https://www.example.com';
+    Navigator.of(context).push(new MaterialPageRoute(
+      builder: (context){
+        return new WebviewScaffold(
+            url: url,
+            appBar: new AppBar(
+              title: new Text("Webview Test"),
+          ),
+        );
+      },
+    ));
   }
 }
